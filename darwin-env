@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export GOOS=darwin
+export GOARCH=amd64
+export CGO_ENABLED=1
+export CC=$PWD/cc-darwin-amd64.bash
+export CC_FOR_darwin_amd64=$PWD/cc-darwin-amd64.bash
+exec "$@"
